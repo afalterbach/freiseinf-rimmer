@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>freisein</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#1e88e5;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  text-align:center;
+}
+.spinner{
+  width:48px;
+  height:48px;
+  border:5px solid rgba(255,255,255,.3);
+  border-top:5px solid #fff;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+  margin:0 auto 16px;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.small{opacity:.85}
+</style>
+</head>
+<body>
+<div>
+  <div class="spinner"></div>
+  <h2>Gruppe „freisein“ wird geöffnet…</h2>
+  <p class="small">Bitte warten</p>
+</div>
+</body>
+</html>
